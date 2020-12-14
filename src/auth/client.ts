@@ -1,8 +1,7 @@
 import {GraphQLClient} from "graphql-request/dist";
 
-const githubBaseUrl = "https://github.com"
 
 export const getClient = () => {
-    const client = new GraphQLClient(githubBaseUrl)
+    const client = new GraphQLClient("https://api.github.com/graphql")
     return client
 }
